@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All Products-Templebody.NG</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  -->
+  <script src="store.js" async></script>
+</head>
+<body>
+  
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">Templebody.<span>NG</span></a></h1>
+                <!-- <img src="" alt=""> -->
+            </div>
+            <nav class="nav">
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"> <img src="assets/cart.png"  width="30px" height="30px"></a>
+            <img src="assets/burger_line_list_menu_nav_navigation_option_icon_123231.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+       
+    </div>
+    <!-- firsthalf of cart -->
+    <section class="container content-section">
+            <h2 class="section-header">Waist Trainers</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Bella Shaper</span>
+                    <a href="productdetails.html"><img class="shop-item-image" src="assets/image0.jpeg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Bella Shaper</span>
+                    <a href="productdetails.html"><img class="shop-item-image" src="assets/image1.jpeg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Bella Shaper</span>
+                    <a href="productdetails.html"> <img class="shop-item-image" src="assets/caro.jpg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Bella Shaper</span>
+                    <a href="productdetails.html"></a><img class="shop-item-image" src="assets/image5.jpeg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Shapers</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Eva Body Shaper</span>
+                    <a href="productdetails.html"> <img class="shop-item-image" src="assets/image0.jpeg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Binta Shaper</span>
+                    <a href="productdetails.html"></a><img class="shop-item-image" src="assets/image0.jpeg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Bella Shaper</span>
+                    <a href="productdetails.html"><img class="shop-item-image" src="assets/caro.jpg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Bella Shaper</span>
+                <a href="productdetails.html"><img class= "shop-item-image" src="assets/image5.jpeg"></a>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+            </div>
+        </section>
+
+
+
+    <!-- crt items details -->
+    <section class="container1 content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            <!-- to remove the items we put in the cart previously had to comment the rows out -->
+            <!-- <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="assets/image1.jpeg" width="100" height="100">
+                    <span class="cart-item-title">T-Shirt</span>
+                </div>
+                <span class="cart-price cart-column">$19.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="assets/image3.jpeg" width="100" height="100">
+                    <span class="cart-item-title">Album 3</span>
+                </div>
+                <span class="cart-price cart-column">$9.99</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="2">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div> -->
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+    
+
+
+         <!-- footer -->
+     <div class="footer">
+         <div class="container">
+             <div class="row">
+                 <div class="footer-col-1">
+                     <h3>Download our app</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing .</p> 
+                       <div class="app-logo">
+                           <img src="assets/google.png" alt="">
+                           <img src="assets/appstore.png" alt="">
+                       </div>  
+    
+                 </div>
+                 <div class="footer-col-2">
+                  <img src="assets/footerlogo.jpg" alt="">
+                    <p>our purposeorem ipsum dolor sit amet consectetur adipisicing .</p> 
+           
+
+                 </div>
+                 <div class="footer-col-3">
+                 <h3>Useful links</h3>
+                 <ul>
+                     <li>Coupons</li>
+                     <li>Blog Post</li>
+                     <li>Return policy</li>
+                     <li>Join affiliate</li>
+                 </ul>
+                      <p>our purposeorem ipsum dolor sit amet consectetur adipisicing .</p> 
+             
+
+             </div>
+           
+            <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+            </ul>
+                
+
+        </div>
+      </div>
+      <hr>
+      <p class="copyright"> Copyright 2021- IreneBoyle</p>
+
+
+
+
+         </div>
+     </div>
+
+     <!-- js for toggle -->
+     <script>
+         var MenuItems = document.getElementById("MenuItems");
+         MenuItems.style.maxHeight = "0px";
+         function menutoggle(){
+             if(  MenuItems.style.maxHeight == "0px")
+             {
+                 MenuItems.style.maxHeight = "200px"
+             }
+             else{
+                MenuItems.style.maxHeight = "0px"
+
+             }
+         }
+     </script>
+    
+</body>
+</html>
